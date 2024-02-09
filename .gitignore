@@ -1,0 +1,8 @@
+__pycache__/
+TransitRouting/__pycache__/
+Toolkit/__pycache__/
+ORS/milan.osm.pbf
+TransitRouting/GTFS/
+TransitRouting/dict_builder/
+data/gtfs/
+data/milano/milano_simpl_proj.graphml
