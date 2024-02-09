@@ -1,0 +1,2 @@
+milano_population_data : https://dati.comune.milano.it/dataset/ds25-popolazione-proiezione-popolazione-quartiere
+milano_nils : https://dati.comune.milano.it/dataset/ds964-nil-vigenti-pgt-2030/resource/9c4e0776-56fc-4f3d-8a90-f4992a3be426

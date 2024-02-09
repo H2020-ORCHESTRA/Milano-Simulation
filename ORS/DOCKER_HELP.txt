@@ -1,0 +1,19 @@
+# Step number 1 - Install Ubuntu from Microsoft Store
+
+# Step number 2 - Install Windows Subsystem for Linux
+
+# Step number 3 - Install Docker based on the following link : https://docs.docker.com/engine/install/ubuntu/
+
+# Step number 4 - Take docker compose file from Openrouteservice Github : https://github.com/GIScience/openrouteservice (also stored locally)
+
+# Step number 5 - Extract OSM information from bbbike.org - use pbf format. Edit docker compose for inputed local file
+
+# Step number 6 - Input pbf file on home\docker in the linux subsystem
+
+# IMPORTANT !!! - If user not administrator go to WSL (Ubuntu and do the following)
+sudo usermod -aG docker $USER # this adds the permissions
+newgrp docker # this refreshes the permissions in the current session
+
+# If connection can not be established we may need to do the following 
+docker network rm <network Id>
+docker network ls (to find the id)
