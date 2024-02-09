@@ -742,7 +742,6 @@ if __name__ == "__main__":
     agent_results = agent_results.reset_index(level=['Step','AgentID'])
     agent_results = agent_results[agent_results["Step"] == steps-1].drop(columns=['Step']).set_index("AgentID")
 
-    #print(agent_results)
     agents_mod =  agent_results.dropna(subset=['NO_PERSONS'])
     agents_mod = agents_mod[["FLIGHT","GATE","DEPARTURE","BAGS","PASSPORT CONTROL","END_TIME","APPROACH", "DROP_OFF", "STATUS","REGION","NO_PERSONS", "MODE", "LINE_USED",'ACTIVATION']]
     agents_mod = get_flows(agents_mod)
@@ -764,7 +763,6 @@ if __name__ == "__main__":
     CAR_AGENTS = CAR_AGENTS.drop(['ACCESS_TIME'],axis=1)
     CAR_AGENTS.to_excel(f'data/passengers/{model.month_name}/{model.date_str}/CAR_{start}_{steps}.xlsx')
 
-    print(end-st)
 
     close_ORS()
 

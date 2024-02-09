@@ -19,7 +19,7 @@ for st in loaded_dict.keys():
     escape_pressed = map_running(map_properties, loaded_dict[st], int(st))
 
     # Save each frame as an image
-    frame_name = f'misc/pics3/frame_{frame_counter:04d}.png'
+    frame_name = f'data/pics/frame_{frame_counter:04d}.png'
     pygame.image.save(map_properties['scr'], frame_name)
     frame_counter += 1
 

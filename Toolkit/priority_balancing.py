@@ -150,11 +150,9 @@ def check_lines_stations(model,agent,station_update,line_update):
             
         else:
             if line_update[agent.LINE_USED] >= 200 and agent.MODE =="TRAIN":
-                print(f"Full Capacity - Line {agent.LINE_USED}")
                 agent.activation = agent.BOARD_TIME + 1
                 agent.LINE_USED = 'None'
             elif line_update[agent.LINE_USED] >= 50 and agent.MODE =="COACH":
-                print(f"Full Capacity - Line {agent.LINE_USED}")
                 agent.activation = agent.BOARD_TIME + 1
                 agent.LINE_USED = 'None'
             else:
